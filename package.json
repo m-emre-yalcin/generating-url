@@ -1,5 +1,5 @@
 {
-  "name": "axios-easy-request",
+  "name": "vue-request-handler",
   "version": "0.1.0",
   "description": "Request handler for vue-vuex applications. Manage your requests easily.",
   "main": "index.js",

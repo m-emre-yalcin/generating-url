@@ -1,0 +1,23 @@
+{
+  "name": "axios-easy-request",
+  "version": "0.1.0",
+  "description": "Request handler for vue-vuex applications. Manage your requests easily.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue.js",
+    "strapi.js",
+    "axios",
+    "request",
+    "handler",
+    "easy",
+    "api",
+    "call",
+    "crud",
+    "handler"
+  ],
+  "author": "M.Emre Yalçın",
+  "license": "MIT"
+}

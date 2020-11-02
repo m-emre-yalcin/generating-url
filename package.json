@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Request handler for vue-vuex applications. Manage your requests easily.",
   "main": "index.js",
+  "repository": "https://github.com/m-emre-yalcin/request-handler.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

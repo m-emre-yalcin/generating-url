@@ -1,11 +1,11 @@
 {
-  "name": "generate-url",
+  "name": "generating-url",
   "version": "0.1.1",
   "description": "Easily generate url from an object options.",
   "author": "M.Emre Yalçın <99.emreyalcin@gmail.com>",
   "license": "MIT",
   "main": "index.js",
-  "repository": "https://github.com/m-emre-yalcin/generate-url.git",
+  "repository": "https://github.com/m-emre-yalcin/generating-url.git",
   "scripts": {
     "build": "webpack",
     "serve": "webpack serve",

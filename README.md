@@ -2,7 +2,7 @@
 
 install:
 
-`npm i generate-url`
+`npm i generating-url`
 
 *This module is also compatible with `strapi.js` APIs*
 
@@ -11,7 +11,7 @@ install:
 Generate an url for making api request:
 
 ```javascript
-import generateUrl from 'generate-url'
+import generateUrl from 'generating-url'
 
 let url = generateUrl({
         path: 'sections',
@@ -33,12 +33,12 @@ Generate url without query string
 ```javascript
 let url = index.generateUrl({
     path: 'sections',
-    query: false // if you don't want to use the query, you need to pass it 'false'
+    query: false // if you don't want to use the query, you need to pass 'false' here
 })
 /* url = /sections */
 ```
 
->if you dont define the `query` property, it will use the default query object:
+>if you dont define the `query` property, it will use the `default query` object:
 
 ```javascript
 {
@@ -48,7 +48,7 @@ let url = index.generateUrl({
 }
 ```
 
-Generate url with a `parameter` and default `query`
+Generate url with a `parameter` and the `default query`
 
 ```javascript
 let url = index.generateUrl({

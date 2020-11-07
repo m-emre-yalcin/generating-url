@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry: './index.js',
     output: {
         filename: 'index.js',
@@ -19,11 +19,5 @@ module.exports = {
                 }
             },
         ]
-    },
-    devServer: {
-        contentBase: path.join(__dirname, 'test'),
-        historyApiFallback: true,
-        compress: true,
-        port: 8080,
     },
 }

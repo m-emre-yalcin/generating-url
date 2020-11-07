@@ -11,7 +11,7 @@ install:
 Generate an url for making api request:
 
 ```javascript
-import url from 'generating-url'
+import url from 'generating-url/index'
 
 let path = url.generate({
         path: 'sections',

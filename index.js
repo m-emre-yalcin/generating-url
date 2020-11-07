@@ -3,7 +3,7 @@ import {
 } from 'path-to-regexp'
 
 export default {
-    generateUrl(request) {
+    generate(request) {
         // path should be defined
         if (request.path && typeof request.path == 'string') {
             if (request.url) request.url = '/' // if url is predefined, overwrite it

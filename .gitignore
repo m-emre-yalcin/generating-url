@@ -11,9 +11,6 @@ node_modules/
 # Coverages
 coverage
 
-#dist
-dist
-
 # Optional npm cache directory
 .npm
 

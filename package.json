@@ -1,6 +1,6 @@
 {
   "name": "generating-url",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Easily generate url from an object options.",
   "author": "M.Emre Yalçın <99.emreyalcin@gmail.com>",
   "license": "MIT",
@@ -13,11 +13,13 @@
     "test-c": "jest --coverage"
   },
   "keywords": [
-    "axios",
+    "url generate",
     "url create",
     "create link",
     "create url",
     "request url",
+    "url",
+    "generate",
     "url handler",
     "link generator",
     "url generator",

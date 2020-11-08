@@ -11,10 +11,10 @@ install:
 Generate an url for making api request:
 
 ```javascript
-import url from 'generating-url/index'
+import url from 'generating-url'
 
 let path = url.generate({
-        path: 'sections',
+        path: 'sections', // required field
         query: { // you can define queries according to your API
             _start: 0,
             _limit: 20,

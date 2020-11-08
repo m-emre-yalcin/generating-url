@@ -1,14 +1,12 @@
 {
   "name": "generating-url",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Easily generate url from an object options.",
   "author": "M.Emre Yalçın <99.emreyalcin@gmail.com>",
   "license": "MIT",
-  "main": "dist/index.js",
+  "main": "index.js",
   "repository": "https://github.com/m-emre-yalcin/generating-url.git",
   "scripts": {
-    "build": "webpack",
-    "serve": "webpack serve",
     "test": "jest",
     "test-c": "jest --coverage"
   },
@@ -20,6 +18,7 @@
     "request url",
     "url",
     "generate",
+    "url generator",
     "url handler",
     "link generator",
     "url generator",
@@ -27,14 +26,8 @@
     "strapi.js"
   ],
   "devDependencies": {
-    "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
-    "babel-jest": "^26.6.3",
-    "babel-loader": "^8.1.0",
-    "jest": "^26.6.2",
-    "webpack": "^5.1.3",
-    "webpack-cli": "^4.1.0",
-    "webpack-dev-server": "^3.11.0"
+    "jest": "^26.6.2"
   },
   "dependencies": {
     "path-to-regexp": "^6.2.0"

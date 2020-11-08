@@ -25,7 +25,7 @@ let path = url.generate({
         },
     })
 /* path = /sections?_start=0&_limit=20&_where[id_eq]=5&_sort=id:DESC */
-axios.get('localhost:1337/' + path)
+axios.get('localhost:1337' + path)
 ```
 
 Generate url without query string

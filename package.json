@@ -1,6 +1,6 @@
 {
   "name": "generating-url",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "Easily generate url from an object options.",
   "author": "M.Emre Yalçın <99.emreyalcin@gmail.com>",
   "license": "MIT",
@@ -26,7 +26,6 @@
     "strapi.js"
   ],
   "devDependencies": {
-    "@babel/preset-env": "^7.12.1",
     "jest": "^26.6.2"
   },
   "dependencies": {

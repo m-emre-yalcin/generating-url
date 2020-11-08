@@ -48,6 +48,11 @@ module.exports = {
                 request.url = request.url.slice(0, -1);
             }
 
+            // base url
+            if (request.baseUrl) {
+                request.url = request.baseUrl.concat(request.url)
+            }
+
             return request.url;
         } else {
             console.error("Generating-url[error]: Please define a 'path'.", "An example: { path: 'notifications/count' }");

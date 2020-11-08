@@ -14,6 +14,7 @@ Generate an url for making api request:
 import url from 'generating-url'
 
 let path = url.generate({
+        baseUrl: 'http://localhost:1337', // optional
         path: 'sections', // required field
         query: { // you can define queries according to your API
             _start: 0,
@@ -24,8 +25,11 @@ let path = url.generate({
             _sort: 'id:DESC'
         },
     })
-/* path = /sections?_start=0&_limit=20&_where[id_eq]=5&_sort=id:DESC */
-axios.get('localhost:1337' + path)
+/* path = http://localhost:1337/sections?_start=0&_limit=20&_where[id_eq]=5&_sort=id:DESC */
+
+axios.get(path)
+// or
+fetch(path) // get
 ```
 
 Generate url without query string

@@ -1,7 +1,8 @@
-import url from '../index.js'
+const url = require('../index.js')
 
 test('generate url with query', () => {
     let path = url.generate({
+        baseUrl: 'localhost:1337',
         path: 'sections',
         query: {
             _start: 0,
@@ -14,7 +15,23 @@ test('generate url with query', () => {
     })
     expect(path).not.toBe(false)
 
-    console.log(expect.getState().currentTestName, ':', url)
+    console.log(expect.getState().currentTestName, ':', path)
+})
+
+test('try to generate without path', () => {
+    let path = url.generate({
+        query: {
+            _start: 0,
+            _limit: 20,
+            _where: {
+                id_eq: 5
+            },
+            _sort: 'id:DESC'
+        },
+    })
+    expect(path).toBe(false)
+
+    console.log(expect.getState().currentTestName, ':', path)
 })
 
 test('generate url without query', () => {
@@ -24,7 +41,7 @@ test('generate url without query', () => {
     })
     expect(path).not.toBe(false)
 
-    console.log(expect.getState().currentTestName, ':', url)
+    console.log(expect.getState().currentTestName, ':', path)
 })
 
 test('generate url default query', () => {
@@ -33,7 +50,7 @@ test('generate url default query', () => {
     })
     expect(path).not.toBe(false)
 
-    console.log(expect.getState().currentTestName, ':', url)
+    console.log(expect.getState().currentTestName, ':', path)
 })
 
 test('generate url 1', () => {
@@ -43,7 +60,7 @@ test('generate url 1', () => {
     })
     expect(path).not.toBe(false)
 
-    console.log(expect.getState().currentTestName, ':', url)
+    console.log(expect.getState().currentTestName, ':', path)
 })
 
 test('generate url 2', () => {
@@ -54,7 +71,7 @@ test('generate url 2', () => {
     })
     expect(path).not.toBe(false)
 
-    console.log(expect.getState().currentTestName, ':', url)
+    console.log(expect.getState().currentTestName, ':', path)
 })
 
 test('generate url 3', () => {
@@ -64,7 +81,7 @@ test('generate url 3', () => {
     })
     expect(path).not.toBe(false)
 
-    console.log(expect.getState().currentTestName, ':', url)
+    console.log(expect.getState().currentTestName, ':', path)
 })
 
 test('generate url 4', () => {
@@ -74,7 +91,7 @@ test('generate url 4', () => {
     })
     expect(path).not.toBe(false)
 
-    console.log(expect.getState().currentTestName, ':', url)
+    console.log(expect.getState().currentTestName, ':', path)
 })
 
 test('generate url with parameters and default query', () => {
@@ -86,7 +103,7 @@ test('generate url with parameters and default query', () => {
     })
     expect(path).not.toBe(false)
 
-    console.log(expect.getState().currentTestName, ':', url)
+    console.log(expect.getState().currentTestName, ':', path)
 })
 
 test('generate url with parameters and query', () => {
@@ -107,5 +124,5 @@ test('generate url with parameters and query', () => {
     })
     expect(path).not.toBe(false)
 
-    console.log(expect.getState().currentTestName, ':', url)
+    console.log(expect.getState().currentTestName, ':', path)
 })

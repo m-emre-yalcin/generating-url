@@ -1,6 +1,6 @@
 {
   "name": "generating-url",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "Easily generate url from an object options.",
   "author": "M.Emre Yalçın <99.emreyalcin@gmail.com>",
   "license": "MIT",
@@ -27,6 +27,9 @@
   ],
   "devDependencies": {
     "jest": "^26.6.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
     "path-to-regexp": "^6.2.0"
